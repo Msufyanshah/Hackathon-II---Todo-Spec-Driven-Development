@@ -61,6 +61,8 @@ Only **Basic Level features** are permitted:
 * Project runs a placeholder Python entry point
 * No unused folders or future-phase artifacts exist
 
+**Status**: [X] Completed
+
 ---
 
 ### TASK-P1-002: Define Task Data Model
@@ -77,6 +79,8 @@ Only **Basic Level features** are permitted:
 * Task model is explicit and minimal
 * No persistence or timestamps required
 
+**Status**: [X] Completed
+
 ---
 
 ### TASK-P1-003: Define In-Memory Storage Mechanism
@@ -92,6 +96,8 @@ Only **Basic Level features** are permitted:
 
 * All task operations work in-memory only
 * Data resets on application restart
+
+**Status**: [X] Completed
 
 ---
 
@@ -113,6 +119,8 @@ Only **Basic Level features** are permitted:
 * Each command maps to exactly one operation
 * No ambiguous or overloaded commands
 
+**Status**: [X] Completed
+
 ---
 
 ### TASK-P1-005: Implement Add Task Flow
@@ -130,6 +138,8 @@ Only **Basic Level features** are permitted:
 * Task appears in task list immediately
 * Empty titles are rejected
 
+**Status**: [X] Completed
+
 ---
 
 ### TASK-P1-006: Implement View Task List Flow
@@ -144,6 +154,8 @@ Only **Basic Level features** are permitted:
 
 * Completed and incomplete tasks are distinguishable
 * Empty list handled gracefully
+
+**Status**: [X] Completed
 
 ---
 
@@ -161,6 +173,8 @@ Only **Basic Level features** are permitted:
 * Invalid IDs handled safely
 * Updates reflected immediately
 
+**Status**: [X] Completed
+
 ---
 
 ### TASK-P1-008: Implement Delete Task Flow
@@ -177,6 +191,8 @@ Only **Basic Level features** are permitted:
 * Deleted task no longer appears
 * Invalid IDs do not crash app
 
+**Status**: [X] Completed
+
 ---
 
 ### TASK-P1-009: Implement Mark Complete / Incomplete Flow
@@ -192,6 +208,8 @@ Only **Basic Level features** are permitted:
 
 * Status updates correctly
 * Toggle is reversible
+
+**Status**: [X] Completed
 
 ---
 
@@ -210,6 +228,8 @@ Only **Basic Level features** are permitted:
 * Application does not terminate unexpectedly
 * User can perform multiple operations per run
 
+**Status**: [X] Completed
+
 ---
 
 ### TASK-P1-011: Implement Input Validation & Error Handling
@@ -226,6 +246,8 @@ Only **Basic Level features** are permitted:
 * No unhandled exceptions
 * Clear error messages
 
+**Status**: [X] Completed
+
 ---
 
 ### TASK-P1-012: Phase I Verification
@@ -241,6 +263,8 @@ Only **Basic Level features** are permitted:
 **Acceptance Criteria**:
 
 * Phase I passes all acceptance checks
+
+**Status**: [X] Completed
 
 ---
 
