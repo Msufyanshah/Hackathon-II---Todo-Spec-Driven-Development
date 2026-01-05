@@ -49,9 +49,17 @@ The Phase I Console Todo Application provides a simple, command-line interface f
 1. Ensure Python 3.13+ is installed on your system
 2. Navigate to this directory (`phase-1-console`)
 3. Run the application:
+
+   Using UV (recommended):
+   ```bash
+   uv run src/main.py
+   ```
+
+   Alternative (standard Python):
    ```bash
    python src/main.py
    ```
+
 4. Follow the on-screen prompts to interact with the application
 
 ## Architecture

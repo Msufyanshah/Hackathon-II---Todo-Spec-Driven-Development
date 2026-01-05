@@ -67,10 +67,17 @@ Phase I has been successfully implemented as a console-only, single-user Todo ap
 1. Ensure Python 3.13+ is installed
 2. Navigate to the `phase-1-console` directory
 3. Run the application:
+
+   Using UV (recommended):
    ```bash
    uv run src/main.py
-
    ```
+
+   Alternative (standard Python):
+   ```bash
+   python src/main.py
+   ```
+
 4. Follow the on-screen prompts to interact with the application
 
 ## Methodology
