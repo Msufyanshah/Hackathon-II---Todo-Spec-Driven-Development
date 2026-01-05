@@ -14,7 +14,7 @@ The Todo Management System is being developed through clearly defined phases:
 
 ## Current Status: Phase I Complete ✅
 
-Phase I has been successfully implemented as a console-only, single-user Todo application with in-memory storage. The system allows authenticated users to manage personal tasks through CLI commands, with correctness guaranteed by specification.
+Phase I has been successfully implemented as a console-only, single-user Todo application with in-memory storage. The system allows a single user to manage personal tasks through CLI commands using in-memory storage.
 
 ### Features Implemented
 
@@ -68,7 +68,8 @@ Phase I has been successfully implemented as a console-only, single-user Todo ap
 2. Navigate to the `phase-1-console` directory
 3. Run the application:
    ```bash
-   python src/main.py
+   uv run src/main.py
+
    ```
 4. Follow the on-screen prompts to interact with the application
 
