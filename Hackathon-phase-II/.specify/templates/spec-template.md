@@ -84,16 +84,22 @@
 
 ### Functional Requirements
 
-- **FR-001**: System MUST [specific capability, e.g., "allow users to create accounts"]
-- **FR-002**: System MUST [specific capability, e.g., "validate email addresses"]  
-- **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
-- **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
-- **FR-005**: System MUST [behavior, e.g., "log all security events"]
+- **FR-001**: System MUST follow spec-first development (no implementation without approved specification)
+- **FR-002**: System MUST use Better Auth with JWT for authentication (no alternative auth mechanisms)
+- **FR-003**: System MUST use SQLModel for database access (no raw SQL)
+- **FR-004**: System MUST handle environment configuration via environment variables only
+- **FR-005**: System MUST verify JWT on every API request and return 401 for unauthorized requests
+- **FR-006**: System MUST filter task access by authenticated user ID
+- **FR-007**: System MUST store data in Neon Serverless PostgreSQL database
+- **FR-008**: System MUST implement REST-compliant endpoints as specified
+- **FR-009**: System MUST achieve 80%+ test coverage for all new features
+- **FR-010**: System MUST pass all linting and formatting checks before merging
+- **FR-011**: System MUST verify all external dependencies against known security databases
+- **FR-012**: System MUST pin dependencies to specific versions in package managers
 
 *Example of marking unclear requirements:*
 
-- **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
-- **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
+- **FR-013**: System MUST [specific capability] - [NEEDS CLARIFICATION: detail required]
 
 ### Key Entities *(include if feature involves data)*
 

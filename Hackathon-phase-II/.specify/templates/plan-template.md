@@ -31,7 +31,16 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+Constitution compliance verification:
+- [ ] Spec-first development: Confirm all implementation originates from approved specification
+- [ ] Agentic workflow integrity: Verify adherence to Write spec → Plan → Tasks → Claude Code execution sequence
+- [ ] Zero manual coding: Ensure all code generation occurs through Claude Code + Spec-Kit Plus
+- [ ] User data isolation: Verify strict per-user task ownership with no cross-user data visibility
+- [ ] Reproducibility and auditability: Confirm all steps, prompts, and iterations are reviewable
+- [ ] Tech stack compliance: Verify adherence to defined technology standards (Next.js 16+, Python FastAPI, SQLModel, Neon PostgreSQL, Better Auth)
+- [ ] Security principles: Confirm stateless JWT authentication, proper filtering by user ID, and shared secret consistency
+- [ ] Code quality standards: Verify test coverage will be 80%+ and code passes linting/formatting checks
+- [ ] Source verification: Confirm external dependencies are properly vetted and attributed
 
 ## Project Structure
 
