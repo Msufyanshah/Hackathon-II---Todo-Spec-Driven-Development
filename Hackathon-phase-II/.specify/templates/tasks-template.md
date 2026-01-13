@@ -21,7 +21,7 @@ description: "Task list template for feature implementation"
 ## Path Conventions
 
 - **Single project**: `src/`, `tests/` at repository root
-- **Web app**: `backend/src/`, `frontend/src/`
+- **Web app**: `backend/src/`, `frontend/src/` (per constitution: clear separation with /frontend for Next.js, /backend for FastAPI, /specs as single source of truth)
 - **Mobile**: `api/src/`, `ios/src/` or `android/src/`
 - Paths shown below assume single project - adjust based on plan.md structure
 
@@ -62,14 +62,28 @@ description: "Task list template for feature implementation"
 
 Examples of foundational tasks (adjust based on your project):
 
-- [ ] T004 Setup database schema and migrations framework
-- [ ] T005 [P] Implement authentication/authorization framework
-- [ ] T006 [P] Setup API routing and middleware structure
-- [ ] T007 Create base models/entities that all stories depend on
+- [ ] T004 Setup database schema and migrations framework using SQLModel (per constitution requirement - no raw SQL)
+- [ ] T005 [P] Implement Better Auth with JWT authentication framework (per constitution requirement)
+- [ ] T006 [P] Setup API routing and middleware structure with JWT verification on every request
+- [ ] T007 Create base models/entities that all stories depend on using SQLModel
 - [ ] T008 Configure error handling and logging infrastructure
-- [ ] T009 Setup environment configuration management
+- [ ] T009 Setup environment configuration management via environment variables only (per constitution)
+- [ ] T010 [P] Configure code quality tools (linting, formatting, test coverage reporting)
+- [ ] T011 Setup dependency management with version pinning
+- [ ] T012 Configure security scanning for dependencies
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
+
+---
+
+## Phase 2.5: Code Quality & Security Setup
+
+**Purpose**: Establish code quality standards and security verification processes
+
+- [ ] T013 Implement code review process with at least one other team member required for approval
+- [ ] T014 Create checklist for verifying constitutional compliance during code reviews
+- [ ] T015 Set up process for validating new code has corresponding tests
+- [ ] T016 Establish procedure for tracking and approving technical debt
 
 ---
 
