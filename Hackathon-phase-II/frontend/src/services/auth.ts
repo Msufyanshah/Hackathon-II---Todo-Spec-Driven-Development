@@ -38,7 +38,12 @@ class AuthService {
       const response = await api.register(userData);
       return response.data;
     } catch (error) {
-      throw new Error('Registration failed. Please try again.');
+      if (error.response?.status === 409) {
+        // Handle duplicate username/email error specifically
+        throw new Error(error.response.data.detail || 'User with this username or email already exists');
+      } else {
+        throw new Error(error.response?.data?.detail || 'Registration failed. Please try again.');
+      }
     }
   }
 
